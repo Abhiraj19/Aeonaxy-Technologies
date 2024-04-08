@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ece9e9;
+  }
+  .cont{
+      color: #866518;
+      border: 2px solid black;
+    
+     
+      width:100%;
+      display: flex;
+     
+      margin: auto;
+    
+  
+  }
+  .cont>:nth-child(1){
+      /* color: red; */
+      /* border: 2px solid green; */
+      /* height:50%; */
+      width:40%;
+      background-color: #f4d086;
+      border:2px solid blue;
+  
+      /* background-color: #FFE382; */
+      /* margin:10% 10% 10% 10%; */
+  
+   
+  }
+  .cont>div>div{
+      /* color: #eac87b; */
+      /* border: 2px solid green; */
+      /* height:50%; */
+      /* width:40%; */
+      margin:10% 10% 10% 10%;
+    
+  
+   
+  }
+  .cont>div>div>h1{
+    margin-left:4%;
+   
+  
+   
+  }
+  .cont>div>h3{
+      margin:7% 0% 0% 10%;
+      font-family: 'Brush Script MT';
+  
+      color:#bc984f;
+      
+     
+    
+     
+    }
+    .cont>div>h2{
+      margin:7% 0 0 10%;
+     
+    
+     
+    }
+    .sec-cont{
+       border:2px solid red;width:60%;
+       background-color: #FFFFFF;
+    }
+   
+    #none{
+        display: none;
+    }
+   #Signin:hover{
+    background-color: aqua;
+  
+  
+    }
+    .sec-cont >:nth-child(1){
+      margin-top: 2%; margin-left: 66%; border:2px solid orange;width:33%
+  
+    }
+    .sec-cont>:nth-child(2){
+      
+      color: red;
+      border:2px solid green;
+     align-items: center;
+    }
+    @media screen and (max-width: 768px) {
+      .cont {
+          flex-direction: column;
+      }
+      .cont > div {
+          width: 100%;
+      }
+      .sec-cont {
+          margin-top: 20px;
+      }
+      .sec-cont > div {
+          margin-bottom: 20px;
+      }
+      .sec-cont form {
+          margin-top: 0;
+      }
+  }@media only screen and (max-width: 600px) {
+      body {
+        background-color: black;
+      }
+      #sec{
+        flex-direction: column;
+        
+      
+        
+      }
+      #sec>div{
+        /* background-color: #866518; */
+       margin-bottom: 20px;
+       margin-left: 20px;
+       border: 2px solid violet;
+       background-color: #f4d086;
+        
+      }
+      
+    }
+  
+  
+    
+     
+  
+    

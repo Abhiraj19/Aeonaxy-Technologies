@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./styles/profile.css">
+</head>
+<body>
+    <div style="border: 2px solid red;width: 100%; ">
+        <h1 style="margin-left: 20px;color: pink;height: 10px;margin-top: 50px;">
+            dribbble
+
+        </h1>
+        
+        <div style="border:2px solid blueviolet">
+            <div style="border: 2px solid black;width: 60%; margin: auto; display: flex;align-items: center;justify-content: center;">
+                <div style="border: 2px solid green;width: 75%;">
+                    <h2 >Welcome! Let's create your profile</h2>
+                    <p style="margin-top: -20px;font-size: 10px;">Let others get to know you better!You can do these later</p>
+    
+                </div>
+            
+               
+    
+            </div>
+        
+                <h3 style="margin-left: 27.5%;">
+                    Add an avtar
+                </h3>
+                <div class="profile-card">
+                    <div style="display: flex;justify-content:space-between; border:2px solid;align-items: center;">
+                        <div  >
+                            <img class="profile-img" id="profileImg" src="default_profile.jpg" alt="profile images">
+                           
+    
+                        </div>
+                        <label for="imageInput" class="file-upload">Choose Image</label>
+                       
+
+                    </div>
+                    <div style="display: block;text-align: end;">
+                        <button class="default-button" id="showDefaultImages">Choose Default</button>
+
+                    </div>
+
+
+                  
+                    
+                    <div class="default-images">
+                      <img class="default-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8LfAXI0_ZpCRcMpqoygU2y4Ut8wHY-QM3wg&s" alt="Profile 1">
+                      <img class="default-image" src="default_profile2.jpg" alt="Profile 2">
+                      <img class="default-image" src="default_profile3.jpg" alt="Profile 3">
+                    </div>
+                   
+                    
+                   
+                    <input type="file" id="imageInput" accept="image/*">
+                    <h3 style="text-align: left;">Add Your Location</h3>
+                    <input type="text" id="locationInput" placeholder="Enter a location">
+                    <input style="display: block; text-align: left;width: 50%;text-align: center;border-radius: 5px;" type="submit" value="Next">
+                  </div>
+                
+      
+           
+
+        </div>
+    
+       
+    </div>
+ 
+    
+</body>
+<script src="script/profile.js"></script>
+</html>
