@@ -159,4 +159,7 @@ body{
         margin-bottom: 20px;
         text-align: center;
     }
+    #brush{
+        font-family: brush script MT;
+    }
 }

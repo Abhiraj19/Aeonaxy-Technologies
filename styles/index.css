@@ -131,6 +131,9 @@ body{
     
   }
   #mem{display: none;}
+  #brush{
+    font-family: brush script MT;
+  }
   
 }
 

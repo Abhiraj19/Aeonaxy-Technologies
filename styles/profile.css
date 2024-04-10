@@ -203,9 +203,10 @@ body {
   #footer div a {
       font-size: 12px;
   }
-  #welcome{
-    width:100%
+  #brush{
+    font-family: brush script MT;
   }
+
 }
 
 
