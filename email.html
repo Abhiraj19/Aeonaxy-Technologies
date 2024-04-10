@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-color: #f0f0f0; */
+        }
+        nav{
+            display: flex;
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+            align-items: center;
+        }
+        #first{
+            display: flex;
+            justify-content: space-between;
+            width:35%;
+            font-size: 10px;
+            margin-left: 5%;
+
+           
+        }
+        #first a{
+            text-decoration: none;
+        }
+        #second{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 10px;
+            width:25%;
+            /* border: 2px solid green; */
+            margin-left: 25%;
+            
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, p {
+            text-align: center;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #DF8BAD;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #dd075d;
+        }
+        #email{
+            width: 50%;
+            margin-top: 20px;
+            /* display: flex; */
+            /* margin: auto; */
+        }
+        #verificationForm{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border:2px solid red */
+        }
+        #verificationMessage{
+            text-align: center;
+            font-size: 20px;
+
+            color:black
+        }
+        .gray{
+            color:gray;
+            font-size: 10px;
+        }
+        #footer{
+            display: flex;
+            /* align-items: center; */
+            justify-content: space-between;
+         
+            /* border: 3px solid green; */
+           
+        }
+        #footer>div{
+            /* margin: auto; */
+            /* border: 2px solid yellow; */
+            /* height:100%; */
+            text-align: center;
+      
+            
+        }
+        #footer>div a{
+           text-decoration: none;
+           color:gray;
+           font-size: 10px;
+           
+        }
+        @media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #first {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #second {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    h1, p {
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer > div {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    #second{
+        display: none;
+    }
+    nav>h1{font-size: 40px;}
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 style="font-family: brush script MT;">
+            Dribbble
+
+        </h1>
+        <div id="first">
+            <a href="">Inspiration</a>
+            <a href="">Find Work</a>
+            <a href="">Learn Design</a>
+            <a href="">Go Pro</a>
+            <a href="">Hire Designer</a>
+
+        </div>
+        <div id="second">
+            <input  style="font-size: 10px;height: 20px;width: 60px;" type="search" placeholder="Search">
+            <img style="width:20%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv6KZMFGZgpVWAbd7Req3iCzV-35j3t3vdnA&s" alt="errr">
+            <button>Upload</button>
+
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Please verify your emali </h1>
+       
+        <form id="verificationForm">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Send Verification Email</button>
+        </form>
+        <p class="gray" >Please verify your email address.We've sent a confirmation email to 
+        </p>
+        <div id="verificationMessage"></div>
+        <p class="gray">Click the confirmation link in that email to begin using Dribbble.</p>
+        <p class="gray">Don't receive the email? Check your Spam folder, it may have been caught by a filter.if <br>you still don't see it. you can <span style="color :#DF8BAD">resend the confirmation email.</span> </p>
+        <p class="gray">Wrong email address?<span style="color:#DF8BAD">Change it.</span></p>
+
+    </div>
+
+
+
+    <footer id="footer">
+       <div>
+        <h2 style="color:#DF8BAD; text-align: left; margin-left: 20px;font-family: brush script MT;" >dribbble</h2>
+        <p style="text-align: left;margin-left: 20px;font-size: 12px;">Dribbble is the world's leading <br>community for creatives to share, grow, <br>and get hired</p>
+        <div>
+            <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+        </div>
+       </div>
+       <div>
+        <h5>For designers</h5>
+        <a href="">Go Pro!</a> <br>
+        <a href="">Explore design work</a><br>
+        <a href="">Design blog</a><br>
+        <a href="">Overtime podcast</a><br>
+        <a href="">Playoffs</a><br>
+        <a href="">Weekly Warm-Up</a><br>
+        <a href="">Refer a Friend</a><br>
+        <a href="">Code of condect</a>
+
+       </div>
+       <div>
+        <h5>Hire designers</h5>
+        <a href="">Post a job opening</a> <br>
+        <a href="">Post a frrelance <br>Project</a><br>
+        <a href="">Search for designers</a><br>
+        <a href="">Brands</a><br>
+        <a href="">Advertise with us</a>
+       </div>
+       <div>
+        <h5>Company</h5>
+        <a href="">About</a> <br>
+        <a href="">Careers</a><br>
+        <a href="">Support</a><br>
+        <a href="">Media Kit</a><br>
+        <a href="">Testimonials</a><br>
+        <a href="">API</a><br>
+        <a href="">Terms os service</a><br>
+        <a href="">Privacy policy</a> <br>
+        <a href="">Cookie policy</a>
+       </div>
+       <div>
+        <h5>Directories</h5>
+        <a href="">Design jobs</a> <br>
+        <a href="">Designers for hire</a><br>
+        <a href="">Freelance designers <br> for hire</a><br>
+        <a href="">Tags</a><br>
+        <a href="">Places</a><br>
+        <a href="">Design assets</a><br>
+        <a href="">Dribbble Marketplace</a><br>
+        <a href="">Creative Market</a> <br>
+        <a href="">Fontspring</a> <br>
+        <a href="">Font Squirrel</a>
+       </div>
+       <div>
+        <h5>Design Resources</h5>
+        <a href="">Freelancing</a> <br>
+        <a href="">Design Hiring</a><br>
+        <a href="">Design Portfolio</a><br>
+        <a href="">Design Education</a><br>
+        <a href="">Creative Process</a><br>
+        <a href="">Design Industry <br>Trendss</a><br>
+        <a href="">Terms os service</a><br>
+        <a href="">Privacy policy</a> <br>
+        <a href="">Cookie policy</a>
+       </div>
+
+    </footer>
+
+    <script>
+        document.getElementById("verificationForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            var email = document.getElementById("email").value;
+
+            // You can implement your email verification logic here
+            // This is just a basic example
+            if (validateEmail(email)) {
+                document.getElementById("verificationMessage").innerHTML =email
+            } else {
+                document.getElementById("verificationMessage").innerHTML = "<p>Please enter a valid email address.</p>";
+            }
+        });
+
+        // Function to validate email format
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+    </script>
+</body>
+</html>

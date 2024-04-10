@@ -1,4 +1,17 @@
- document.getElementById("showDefaultImages").addEventListener("click", function() {
+let button=document.getElementById("next")
+// let choose=document.getElementById("locationInput");
+
+// let defaultb=document.getElementById("showDefaultImages");
+// let location=document.getElementById("locationInput")
+button.addEventListener("click",function(){
+ 
+    window.location.href = "course.html"
+
+  
+ 
+})
+document.getElementById("showDefaultImages").addEventListener("click", function(e) {
+  e.preventDefault()
       var defaultImages = document.querySelector(".default-images");
       defaultImages.style.display = (defaultImages.style.display === "none") ? "flex" : "none";
     });

@@ -5,7 +5,7 @@ body{
   }
   .cont{
       color: #866518;
-      border: 2px solid black;
+      /* border: 2px solid black; */
     
      
       width:100%;
@@ -21,7 +21,7 @@ body{
       /* height:50%; */
       width:40%;
       background-color: #f4d086;
-      border:2px solid blue;
+      /* border:2px solid blue; */
   
       /* background-color: #FFE382; */
       /* margin:10% 10% 10% 10%; */
@@ -61,7 +61,7 @@ body{
      
     }
     .sec-cont{
-       border:2px solid red;width:60%;
+      width:60%;
        background-color: #FFFFFF;
     }
    
@@ -74,27 +74,43 @@ body{
   
     }
     .sec-cont >:nth-child(1){
-      margin-top: 2%; margin-left: 66%; border:2px solid orange;width:33%
+      margin-top: 2%; margin-left: 66%;width:33%
   
     }
     .sec-cont>:nth-child(2){
       
       color: red;
-      border:2px solid green;
+     
      align-items: center;
     }
+    .shadow{
+      border-radius: 5px;
+      border: none;
+      height: 20px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      background-color: lightgrey
+    }
+    
+    
     @media screen and (max-width: 768px) {
       .cont {
           flex-direction: column;
+          /* width: 100%; */
+         
       }
-      .cont > div {
-          width: 100%;
+     
+      #contf{
+      width: 100%;
+
       }
       .sec-cont {
-          margin-top: 20px;
+          /* margin-top: 20px; */
+          width: 100%;
       }
+    
       .sec-cont > div {
           margin-bottom: 20px;
+          /* width: 100%; */
       }
       .sec-cont form {
           margin-top: 0;

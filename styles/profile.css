@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,13 +7,15 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
-  }
+    width: 90%;
+    margin: auto;
+  } */
 
   .profile-card {
     /* background-color: #fff; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* border-radius: 8px; */
-    border:2px solid green;
+    /* border:2px solid green; */
     overflow: hidden;
     width: 300px;
     padding: 20px;
@@ -66,6 +68,9 @@ body {
     /* background-color: #4CAF50; */
     color: white;
     padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
     /* border: none; */
     /* border-radius: 4px; */
@@ -74,10 +79,11 @@ body {
     margin-bottom: 10px;
     width: 40%;
     height: 10px;
-    border:2px solid greenyellow;
+    /* border:2px solid greenyellow; */
     color:black
     /* text-align: center; */
   }
+ 
 
 
   .default-button {
@@ -93,4 +99,136 @@ body {
     color: black;
     text-decoration: none;
   }
+  #showDefaultImages{
+    border: none;
+    width: 140px;
+    height: 20px;
+    /* border: 2px solid orangered; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* justify-content: right; */
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 50%;
+  
+   
+  }
+  #footer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+ 
+    /* border: 3px solid green; */
+   
+}
+#footer>div{
+    /* margin: auto; */
+    /* border: 2px solid yellow; */
+    /* height:100%; */
+    text-align: center;
+
+    
+}
+#footer>div a{
+   text-decoration: none;
+   color:gray;
+   font-size: 10px;
+   
+}
+  /* @media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; 
+    }
+    
+  
+    h1 {
+        font-size: 24px;
+    }
+    
+   
+    .profile-card {
+        width: 90%;
+    }
+    
+    
+    .default-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    
+} */
+
+
+
+
+@media only screen and (max-width: 600px) {
+  /* Adjustments for the header */
+  h1 {
+      font-size: 24px;
+      margin-left: 10px;
+  }
+
+  /* Adjustments for the main content */
+  .div {
+      width: 90%;
+  }
+
+  .profile-card {
+      width: 90%;
+      margin-left: 5%;
+  }
+
+  .profile-img {
+      width: 80px;
+      height: 80px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="file"] {
+      width: 90%;
+  }
+
+  #next {
+      width: 80%;
+      margin: 10px auto;
+  }
+
+  /* Adjustments for the footer */
+  #footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+
+  #footer div {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  #footer div h2 {
+      margin-left: 0;
+      text-align: center;
+  }
+
+  #footer div p {
+      margin-left: 0;
+      text-align: center;
+  }
+
+  #footer div img {
+      width: 20px;
+      margin: 0 5px;
+  }
+
+  #footer div a {
+      font-size: 12px;
+  }
+}
+
 

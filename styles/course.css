@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+  
+  }
+  #returnbutton{
+    display: block;
+    height: 20px;
+    width: 30px;
+    margin-left: 35px;
+    margin-top: 20px;
+    text-decoration: none;
+    border:none;
+    font-size: 10px;
+    
+    
+    
+
+  }
+  .navbar{
+    display: flex;
+    /* border: 2px solid red; */
+  }
+  .navbar>h1{
+    margin-left: 10px;
+    font-family: brush script MT;
+    color: pink;
+  }
+  .cardcont{
+    display: flex;
+    /* border: 2px solid black; */
+    width: 70%;
+    justify-content: space-between;
+    margin: auto;
+   
+  }
+  .checkbox-round {
+    width: 25px;
+    height: 25px;
+    /* background-color: white; */
+    border-radius: 50%;
+    /* vertical-align: middle; */
+    border: 2px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    margin-left: 45%;
+ 
+}
+.checkbox-round:checked {
+    background-color: blue;
+}
+.mid-div{
+     width: 30%;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     border-radius: 10px;
+
+}
+.img{
+    margin-top: 10px; width:100%;justify-content: center;align-items: center; display: flex;
+
+}
+.heading{
+    text-align: center;
+
+}
+#button{
+    display: block;
+    margin: auto;
+    width: 15%;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: violet;
+    font-size: 10px;
+
+}
+#return{
+    text-align: center;
+    /* margin-top: -1px; */
+    font-size: 10px;
+    color: grey;
+}
+   #footer{
+            display: flex;
+            /* align-items: center; */
+            justify-content: space-between;
+         
+            /* border: 3px solid green; */
+           
+        }
+        #footer>div{
+            /* margin: auto; */
+            /* border: 2px solid yellow; */
+            /* height:100%; */
+            text-align: center;
+      
+            
+        }
+        #footer>div a{
+           text-decoration: none;
+           color:gray;
+           font-size: 10px;
+           
+        }
+
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar h1 {
+        font-size: 24px;
+    }
+
+    .cont {
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+    .cardcont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mid-div {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .checkbox-round {
+        margin-top: 10px;
+    }
+
+    #button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #return {
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer > div {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
