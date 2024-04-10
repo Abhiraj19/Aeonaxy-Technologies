@@ -19,7 +19,7 @@ body{
   }
   .navbar{
     display: flex;
-    /* border: 2px solid red; */
+   
   }
   .navbar>h1{
     margin-left: 10px;
@@ -28,7 +28,7 @@ body{
   }
   .cardcont{
     display: flex;
-    /* border: 2px solid black; */
+    
     width: 70%;
     justify-content: space-between;
     margin: auto;
@@ -37,9 +37,9 @@ body{
   .checkbox-round {
     width: 25px;
     height: 25px;
-    /* background-color: white; */
+  
     border-radius: 50%;
-    /* vertical-align: middle; */
+  
     border: 2px solid #ddd;
     appearance: none;
     -webkit-appearance: none;
@@ -77,22 +77,20 @@ body{
 }
 #return{
     text-align: center;
-    /* margin-top: -1px; */
+    
     font-size: 10px;
     color: grey;
 }
    #footer{
             display: flex;
-            /* align-items: center; */
+           
             justify-content: space-between;
          
-            /* border: 3px solid green; */
+           
            
         }
         #footer>div{
-            /* margin: auto; */
-            /* border: 2px solid yellow; */
-            /* height:100%; */
+           
             text-align: center;
       
             

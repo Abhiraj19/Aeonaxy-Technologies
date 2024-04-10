@@ -15,24 +15,20 @@ body{
   
 
 }
+.cont>h1{
+  font-family: brush script MT;
+}
 .cont>:nth-child(1){
-    /* color: red; */
-    /* border: 2px solid green; */
-    /* height:50%; */
+ 
     width:40%;
     background-color: #f4d086;
     
 
-    /* background-color: #FFE382; */
-    /* margin:10% 10% 10% 10%; */
-
+  
  
 }
 .cont>div>div{
-    /* color: #eac87b; */
-    /* border: 2px solid green; */
-    /* height:50%; */
-    /* width:40%; */
+  
     margin:10% 10% 10% 10%;
   
 
@@ -93,14 +89,11 @@ body{
     background-color: lightgrey
   }
   
-  /* Default styles */
-
-/* Mobile styles */
+  
 @media screen and (max-width: 768px) {
   .cont {
       flex-direction: column;
-      /* width: 100%; */
-     
+   
   }
  
   #contf{
@@ -108,13 +101,13 @@ body{
 
   }
   .sec-cont {
-      /* margin-top: 20px; */
+     
       width: 100%;
   }
 
   .sec-cont > div {
       margin-bottom: 20px;
-      /* width: 100%; */
+     
   }
   .sec-cont form {
       margin-top: 0;
@@ -130,7 +123,7 @@ body{
     
   }
   #sec>div{
-    /* background-color: #866518; */
+  
    margin-bottom: 20px;
    margin-left: 20px;
    border: 2px solid violet;

@@ -10,7 +10,7 @@ button.addEventListener("click",(e)=>{
     window.location.href = "profile.html"
 })
 
-// Loop through each checkbox element to attach event listener
+
 for (let i = 0; i < checkboxes.length; i++) {
     checkboxes[i].addEventListener("click", (e) => {
      console.log("ok")

@@ -9,12 +9,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            /* background-color: #f0f0f0; */
+           
         }
         nav{
             display: flex;
-            /* justify-content: space-evenly; */
-            /* justify-content: space-between; */
+          
             align-items: center;
         }
         #first{
@@ -35,7 +34,7 @@
             align-items: center;
             font-size: 10px;
             width:25%;
-            /* border: 2px solid green; */
+           
             margin-left: 25%;
             
         }
@@ -73,14 +72,13 @@
         #email{
             width: 50%;
             margin-top: 20px;
-            /* display: flex; */
-            /* margin: auto; */
+          
         }
         #verificationForm{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            /* border:2px solid red */
+           
         }
         #verificationMessage{
             text-align: center;
@@ -94,16 +92,14 @@
         }
         #footer{
             display: flex;
-            /* align-items: center; */
+           
             justify-content: space-between;
          
-            /* border: 3px solid green; */
+         
            
         }
         #footer>div{
-            /* margin: auto; */
-            /* border: 2px solid yellow; */
-            /* height:100%; */
+          
             text-align: center;
       
             
@@ -164,7 +160,7 @@
 </head>
 <body>
     <nav>
-        <h1 style="font-family: brush script MT;">
+        <h1 style="font-family: brush script MT">
             Dribbble
 
         </h1>
@@ -271,11 +267,10 @@
 
     <script>
         document.getElementById("verificationForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault(); 
             var email = document.getElementById("email").value;
 
-            // You can implement your email verification logic here
-            // This is just a basic example
+          
             if (validateEmail(email)) {
                 document.getElementById("verificationMessage").innerHTML =email
             } else {
@@ -283,7 +278,7 @@
             }
         });
 
-        // Function to validate email format
+      
         function validateEmail(email) {
             var re = /\S+@\S+\.\S+/;
             return re.test(email);
